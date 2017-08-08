@@ -91,6 +91,41 @@ a {
   text-transform: uppercase;
 }
 
+.highlights {
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 3.77rem auto;
+  width: 6rem;
+}
+.highlight {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 0.77rem auto;
+  align-items: center;
+  width: 6rem;
+}
+
+.img-portrait {
+  width: 3.5rem;
+  height: auto;
+}
+
+.img-landscape {
+  max-width: 5rem;
+  height: auto;
+}
+
+img {
+  border: 2px solid green;
+}
+.highlight span {
+  font-size: 0.77rem;
+  text-align: center;
+}
+
+
 @media only screen and (min-width:470px) {
   h1 {
     font-size: 1.33rem;
@@ -117,12 +152,13 @@ a {
 
   .banner {
     height: 30rem;
+    background-position: center;
   }
 
   #banner-container {
     width: 1032px;
   }
-  
+
   .headline {
     float: right;
     margin-top: 14rem;
@@ -132,5 +168,9 @@ a {
   .headline h1 {
     display: inline-block;
     margin: 1.5rem 5rem;
+  }
+
+  .highlights {
+    height: 8rem;
   }
 }
