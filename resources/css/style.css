@@ -1,17 +1,16 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
-  line-height: 1.4;
 }
 
 body {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
+  line-height: 1.4;
 }
 
-h1 {
+h1, h2 {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.2;
@@ -51,23 +50,27 @@ header .logo {
   margin: auto 1rem auto 2rem;
 }
 
+#our_name {
+  display: none;
+}
 nav {
   margin: auto 2rem auto auto;
+  display: flex;
+  align-items: center;
 }
-nav span {
-  margin: 1rem;
-}
+
 a {
   color: white;
   text-decoration: none;
 }
+
 .nav-link {
   display: none;
+  margin: 1rem;
 }
 #nav-menu {
   display: block;
   float: right;
-  margin: auto 2rem;
 }
 
 .banner {
@@ -92,11 +95,10 @@ a {
 }
 
 .highlights {
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 3.77rem auto;
-  width: 6rem;
 }
 .highlight {
   display: flex;
@@ -117,18 +119,29 @@ a {
   height: auto;
 }
 
-img {
-  border: 2px solid green;
-}
 .highlight span {
   font-size: 0.77rem;
+  margin: 0.77rem auto;
   text-align: center;
 }
 
+.info {
+  height: 2rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.section-title {
+  background-color: cadetblue;
+  color: white;
+}
 
 @media only screen and (min-width:470px) {
   h1 {
     font-size: 1.33rem;
+  }
+  #our_name {
+    display: block;
   }
 }
 
@@ -140,9 +153,11 @@ img {
     top: 1rem;
   }
   .site-container {
-    width: 960px;
+    max-width: 960px;
   }
-
+  #our_name {
+    display: block;
+  }
   #nav-menu {
     display: none;
   }
@@ -156,7 +171,7 @@ img {
   }
 
   #banner-container {
-    width: 1032px;
+    max-width: 1032px;
   }
 
   .headline {
@@ -171,6 +186,12 @@ img {
   }
 
   .highlights {
+    flex-direction: row;
     height: 8rem;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .highlight {
+    margin: 0.77rem 3rem;
   }
 }
