@@ -15,6 +15,7 @@ h1, h2 {
   font-weight: bold;
   line-height: 1.2;
 }
+
 .site-container {
   display: flex;
   flex-flow: row nowrap;
@@ -34,6 +35,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .header {
@@ -41,18 +43,21 @@ section {
   background-color: cadetblue;
   color: white;
   height: 3rem;
-  width: 100%;
+}
+
+.logo {
+  height: 1.5rem;
+  width: auto;
 }
 
 header .logo {
-  height: 1.5rem;
-  width: auto;
   margin: auto 1rem auto 2rem;
 }
 
 #our_name {
   display: none;
 }
+
 nav {
   margin: auto 2rem auto auto;
   display: flex;
@@ -68,6 +73,7 @@ a {
   display: none;
   margin: 1rem;
 }
+
 #nav-menu {
   display: block;
   float: right;
@@ -79,8 +85,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 17rem;
-  width: 100%;
 }
+
 .headline {
   background-color: white;
   display: flex;
@@ -89,6 +95,7 @@ a {
   margin-top: 12rem;
   width: 100%;
 }
+
 .headline h1 {
   margin: 1rem auto;
   text-transform: uppercase;
@@ -100,6 +107,7 @@ a {
   justify-content: flex-start;
   margin: 3.77rem auto;
 }
+
 .highlight {
   display: flex;
   flex-flow: column nowrap;
@@ -125,21 +133,53 @@ a {
   text-align: center;
 }
 
+.information {
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
 .info {
-  height: 2rem;
   width: 100%;
-  flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 .section-title {
   background-color: cadetblue;
   color: white;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+}
+
+.section-title h2 {
+  margin: 0.5rem 1.25rem;
+}
+
+.info p {
+  margin: 1rem 0.5rem;
+  font-size: 0.77rem;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer {
+  background-color: azure;
+  height: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  display: none;
 }
 
 @media only screen and (min-width:470px) {
   h1 {
     font-size: 1.33rem;
   }
+
   #our_name {
     display: block;
   }
@@ -149,18 +189,23 @@ a {
   h1 {
     font-size: 2rem;
   }
+
   header {
     top: 1rem;
   }
+
   .site-container {
     max-width: 960px;
   }
+
   #our_name {
     display: block;
   }
+
   #nav-menu {
     display: none;
   }
+
   .nav-link {
     display: inline-block;
   }
@@ -180,6 +225,7 @@ a {
     margin-left: auto;
     width: auto;
   }
+
   .headline h1 {
     display: inline-block;
     margin: 1.5rem 5rem;
@@ -191,6 +237,7 @@ a {
     justify-content: space-around;
     width: 100%;
   }
+
   .highlight {
     margin: 0.77rem 3rem;
   }
