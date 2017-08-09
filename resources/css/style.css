@@ -50,6 +50,11 @@ section {
   width: auto;
 }
 
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
 header .logo {
   margin: auto 1rem auto 2rem;
 }
@@ -176,12 +181,24 @@ footer {
 }
 
 @media only screen and (min-width:470px) {
+  #our_name {
+    display: block;
+  }
+}
+
+@media only screen and (min-width:550px) {
   h1 {
     font-size: 1.33rem;
   }
+}
 
-  #our_name {
-    display: block;
+@media only screen and (min-width: 650px) {
+  #nav-menu {
+    display: none;
+  }
+
+  .nav-link {
+    display: inline-block;
   }
 }
 
@@ -196,18 +213,6 @@ footer {
 
   .site-container {
     max-width: 960px;
-  }
-
-  #our_name {
-    display: block;
-  }
-
-  #nav-menu {
-    display: none;
-  }
-
-  .nav-link {
-    display: inline-block;
   }
 
   .banner {
