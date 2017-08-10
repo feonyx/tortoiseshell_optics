@@ -67,6 +67,7 @@ nav {
   margin: auto 2rem auto auto;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 a {
@@ -171,6 +172,7 @@ footer {
 
 .footer {
   background-color: azure;
+  font-size: 0.77rem;
   height: 9rem;
   justify-content: center;
   align-items: center;
@@ -190,6 +192,42 @@ footer {
   h1 {
     font-size: 1.33rem;
   }
+
+  .highlights {
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 8rem;
+    margin: 3rem auto;
+    width: 100%;
+  }
+
+  .information {
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .info {
+    width: 35%;
+    margin: 2.5%;
+  }
+
+  .section-title {
+    width: 10rem;
+  }
+
+  .footer {
+    justify-content: flex-start;
+  }
+
+  .logo-div {
+    margin-left: 4rem;
+  }
+
+  .copyright {
+    display: block;
+    margin-left: 1rem;
+  }
+
 }
 
 @media only screen and (min-width: 650px) {
@@ -200,6 +238,27 @@ footer {
   .nav-link {
     display: inline-block;
   }
+
+  .banner {
+    background-position: 35%;
+    height: 22rem;
+  }
+
+  .headline {
+    float: right;
+    margin: 8rem 2rem auto auto;
+    width: auto;
+  }
+
+  .headline h1 {
+    display: inline-block;
+    margin: 0.75rem 4rem;
+  }
+
+  .highlight {
+    margin: 0.77rem 3rem;
+  }
+
 }
 
 @media only screen and (min-width: 1020px) {
@@ -216,8 +275,8 @@ footer {
   }
 
   .banner {
-    height: 30rem;
     background-position: center;
+    height: 30rem;
   }
 
   #banner-container {
@@ -225,25 +284,25 @@ footer {
   }
 
   .headline {
-    float: right;
     margin-top: 14rem;
-    margin-left: auto;
-    width: auto;
   }
 
   .headline h1 {
-    display: inline-block;
     margin: 1.5rem 5rem;
   }
 
   .highlights {
     flex-direction: row;
-    height: 8rem;
+
     justify-content: space-around;
     width: 100%;
   }
 
-  .highlight {
-    margin: 0.77rem 3rem;
+  .info p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 1rem;
   }
 }
